@@ -18,6 +18,9 @@ You may add the packages you want into the **list.txt**, then just run the scrip
 ## TBD
 Adding a non-GUI version. I had one lying around, but I will rework it and attach it later.
 
+## Preview
+![](./07.02.2023.png)
+
 ## Guide
 
 1. Open PowerShell ISE in administrator mode, paste the code, select all, run the code.
@@ -34,6 +37,7 @@ Adding a non-GUI version. I had one lying around, but I will rework it and attac
 
     _It's advised to restrict the execution policy after finishing your job._
     _For more info visit: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.2_
+
 
 ## Getting the list of installed Windows Store packages manually
 
