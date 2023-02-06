@@ -24,19 +24,17 @@ Adding a non-GUI version. I had one lying around, but I will rework it and attac
 ## Guide
 
 1. Open PowerShell ISE in administrator mode, paste the code, select all, run the code.
-2. ~~Save the script code with .PS extension and run the script as PowerShell script with admin rights~~.
+2. ~~Run the script as PowerShell script with admin rights~~.
    1. This would work, but I need to implement interpret recognition conditionals. PowerShell ISE can't use the same path variables as normal PowerShell it seems.
 
-    **PS: By default PowerShell execution policy is disabled**
+        **By default PowerShell execution policy is disabled**, change it with:
+        
+        **`Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope LocalMachine`**
 
-    Try to change it with: 
+        **`Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser`**
 
-    **`Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope LocalMachine`**
-
-    **`Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser`**
-
-    _It's advised to restrict the execution policy after finishing your job._
-    _For more info visit: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.2_
+        _It's advised to restrict the execution policy after finishing your job._
+        _For more info visit: https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-7.2_
 
 
 ## Getting the list of installed Windows Store packages manually
