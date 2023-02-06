@@ -2,18 +2,20 @@
 
 ## Windebloat
 
-Tired of candy crush in your menu?
-You can use this PowerShell ISE script, it's work in progress.
-It's pretty useful for purging new Virtual Machines of garbage in the start menu etc.
+You can use this PowerShell ISE script to remove pre-installed bloatware.
+It's pretty useful for purging new Virtual Machines of garbage in Start Menu.
 
 I have been planning on creating some kind of PoC of PowerShell debloating script.
 This specific script could have been just a simple PS script, but I wanted to try my chances at creating a very simple PS GUI.
-That's it. It took me 5 hours and 2 years of procrastination.
+
+*It took me 5 hours of work and 2 years of procrastination*
 
 ## What does it do?
-It's basically a kind of an array with names of packages that hide in the OS. It could be Candy Crush, Skype Pro 20000, Calculator Super Extreme, or the 10th edition of Xbox Live.
+It's basically a kind of GUI handling an array with names of packages that hide in the OS. It could be any kind of useless app, e.g. Instagram, Candy Crush, Solitaire.
 
-You may add the packages you want into the **list.txt**, then just run the script and remove them through PowerShell. Comment out the ones which shouldn't be removed.
+You may add the packages you want into the **list.txt**, then just run the script and remove them through PowerShell commands. Comment out the ones which shouldn't be removed.
+
+_When creating new user profile Windows copies installed app packages into new user accounts. It is the best to use this script before creating new accounts_
 
 ## TBD
 Adding a non-GUI version. I had one lying around, but I will rework it and attach it later.
@@ -46,8 +48,6 @@ Adding a non-GUI version. I had one lying around, but I will rework it and attac
 **`Get-AppXProvisionedPackage -Online | Select DisplayName`**
 
 **_Selects packages <by name> from packages provisioned for new user accounts._**
-
-_When creating new user profile Windows copies installed app packages into new user accounts_
 
 <the OS>
 
